@@ -1,0 +1,108 @@
+.App {
+  font-family: 'Playfair Display', serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-me{
+  text-align: justify;
+}
+
+
+/* Portfolio.css */
+
+.custom-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-img {
+    border-radius: 8px 8px 0 0;
+    height: 250px; /* Set the desired height for the image */
+    object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+  }
+
+  .card-body {
+    height: 100px; /* Set the desired height for the card body */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .badge {
+    cursor: default;
+  }
+}
+
+/* NavigationBar.css */
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Change color on hover */
+}
+
+.nav-link.active {
+  color: #007bff; /* Change color for the active section */
+}
+
+/* Add this to your CSS */
+.blog-card {
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s; /* Add scaling transition */
+}
+
+.blog-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Add this to your CSS */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
